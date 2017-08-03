@@ -1,0 +1,1 @@
+$('#menu').load('partial/menu.html');
