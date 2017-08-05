@@ -97,6 +97,17 @@ ul {
 .ch-img-3 { 
 	background-image: url(../recursos/imagenes/cuento3.jpg);
 }
+.ch-img-4 { 
+	background-image: url(../recursos/imagenes/img1.jpg);
+}
+
+.ch-img-5 { 
+	background-image: url(../recursos/imagenes/img2.jpg);
+}
+
+.ch-img-6 { 
+	background-image: url(../recursos/imagenes/img3.jpg);
+}
 
 
 .ch-info h3 {
