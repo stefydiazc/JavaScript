@@ -1,0 +1,43 @@
+/*
+    Estructura de datos del archivo JSON
+    
+    https://jsonformatter.curiousconcept.com/
+    
+    {"usuarios":[{"administradores":[{"usuario":"", "clave":"", "cedula":"", "fechaNacimiento":"", "nombres":"", "apellidos":"", "foto":"pathImgFile"}]}, {"encuestadores":[{"usuario":"", "clave":"", "cedula":"", "fechaNacimiento":"", "nombres":"", "apellidos":"", "foto":"pathImgFile"}]}]}
+*/
+
+{
+   "contenido":[
+      {
+          /*
+            Tienen acceso al sistema para la administración/gestión de cantidatos, dignidades, etc. Además tienen acceso a los resultados del proceso –de encuesta a boca de urna– en cualquier momento.
+          */
+         "cuento":[
+            {
+               "codigo":"admin01",
+               "titulo":"0914382072",
+               "descripcion":"1991-02-12",
+               "historia":"LUKE SIMON",
+				"foto":"pathImgFile",
+               "video":"pathImgFile"
+            },
+			{
+               "codigo":"admin01",
+               "titulo":"0914382072",
+               "descripcion":"1991-02-12",
+               "historia":"LUKE SIMON",
+				"foto":"pathImgFile",
+               "video":"pathImgFile"
+            },
+			 {
+               "codigo":"admin01",
+               "titulo":"0914382072",
+               "descripcion":"1991-02-12",
+               "historia":"LUKE SIMON",
+				"foto":"pathImgFile",
+               "video":"pathImgFile"
+            }
+         ]
+      }
+   ]
+}
