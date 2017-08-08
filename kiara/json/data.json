@@ -2,40 +2,109 @@
     Estructura de datos del archivo JSON
     
     https://jsonformatter.curiousconcept.com/
-    
-    {"usuarios":[{"administradores":[{"usuario":"", "clave":"", "cedula":"", "fechaNacimiento":"", "nombres":"", "apellidos":"", "foto":"pathImgFile"}]}, {"encuestadores":[{"usuario":"", "clave":"", "cedula":"", "fechaNacimiento":"", "nombres":"", "apellidos":"", "foto":"pathImgFile"}]}]}
+
 */
 
 {
    "contenido":[
       {
-          /*
-            Tienen acceso al sistema para la administración/gestión de cantidatos, dignidades, etc. Además tienen acceso a los resultados del proceso –de encuesta a boca de urna– en cualquier momento.
-          */
+          
          "cuento":[
             {
-               "codigo":"admin01",
-               "titulo":"0914382072",
-               "descripcion":"1991-02-12",
-               "historia":"LUKE SIMON",
-				"foto":"pathImgFile",
-               "video":"pathImgFile"
-            },
-			{
-               "codigo":"admin01",
-               "titulo":"0914382072",
-               "descripcion":"1991-02-12",
-               "historia":"LUKE SIMON",
-				"foto":"pathImgFile",
-               "video":"pathImgFile"
+				"codigo":"001",
+				"titulo":"Uga, la tortuga",
+				"descripcion":"1991-02-12",
+				"foto_principal":"pathImgFile",
+				"paginas":[ 
+					{
+						"id":"1",
+						"foto":"../recursos/imagenes/img1.jpg",
+						"reseña":"gddfdfd",
+						"audio":""
+					},
+					{
+						"id":"2",
+						"foto":"../recursos/imagenes/img1.jpg",
+						"reseña":"fsffd",
+						"audio":""
+					},
+					{
+						"id":"3",
+						"foto":"../recursos/imagenes/img1.jpg",
+						"reseña":"fsfsfsf",
+						"audio":""
+					},
+					{
+						"id":"4",
+						"foto":"../recursos/imagenes/img1.jpg",
+						"reseña":"dsfff",
+						"audio":""
+					}
+				]
             },
 			 {
-               "codigo":"admin01",
-               "titulo":"0914382072",
-               "descripcion":"1991-02-12",
-               "historia":"LUKE SIMON",
-				"foto":"pathImgFile",
-               "video":"pathImgFile"
+				"codigo":"001",
+				"titulo":"Limon",
+				"descripcion":"1991-02-12",
+				"foto_principal":"pathImgFile",
+				"paginas":[ 
+					{
+						"id":"1",
+						"foto":"../recursos/imagenes/img1.jpg",
+						"reseña":"dfsffsfs",
+						"audio":""
+					},
+					{
+						"id":"2",
+						"foto":"../recursos/imagenes/img1.jpg",
+						"reseña":"sfdfsf",
+						"audio":""
+					},
+					{
+						"id":"3",
+						"foto":"../recursos/imagenes/img1.jpg",
+						"reseña":"fdfdfdf",
+						"audio":""
+					},
+					{
+						"id":"4",
+						"foto":"../recursos/imagenes/img1.jpg",
+						"reseña":"fdfd",
+						"audio":""
+					}
+				]
+            },
+			  {
+				"codigo":"001",
+				"titulo":"Un bonito conejo",
+				"descripcion":"1991-02-12",
+				"foto_principal":"pathImgFile",
+				"paginas":[ 
+					{
+						"id":"1",
+						"foto":"../recursos/imagenes/img1.jpg",
+						"reseña":"fdfdfd",
+						"audio":""
+					},
+					{
+						"id":"2",
+						"foto":"../recursos/imagenes/img1.jpg",
+						"reseña":"fdfdfd",
+						"audio":""
+					},
+					{
+						"id":"3",
+						"foto":"../recursos/imagenes/img1.jpg",
+						"reseña":"dfdfd",
+						"audio":""
+					},
+					{
+						"id":"4",
+						"foto":"../recursos/imagenes/img1.jpg",
+						"reseña":"dffdfdfd",
+						"audio":""
+					}
+				]
             }
          ]
       }
