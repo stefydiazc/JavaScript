@@ -7,9 +7,9 @@ $(function() {
 
 function setData(){
 	objJSON = JSON.parse(datos);
+	
 	contenido = [];
 	
-	console.log(objJSON);
 	
 	for (property in objJSON){
 		
@@ -24,6 +24,7 @@ function setData(){
 						$.each(value.cuento, function(index, value) {
        
 							contenido.push(new Cuento(value));
+							
 						});
 						break;
 					}
@@ -32,8 +33,30 @@ function setData(){
 		
 	}
 	/**/	
-		
-	
+
+
+/*
+    [04]
+*/	
+function mostrarCuentos(){
+	 var stefaniaTable = 
+        `
+        <table><tbody>
+        `;
+    
+    $.each(contenido, function(index, value) { //"<td>" + "</td>"
+        
+        stefaniaTable += "<tr><td>" + value.codigo + "</td>" + "<td>" + value.titulo + "</td><tr>";
+        
+    });
+    
+    stefaniaTable += "</tbody></table>";
+    
+    $("#contenido").append(stefaniaTable);
+    
+}
+}
+
 	
 		
 		/**/
@@ -43,9 +66,6 @@ console.log(contenido[0]);
 console.log(contenido[2]);	
 }
 	
-		
-	}
-
 
  
 
