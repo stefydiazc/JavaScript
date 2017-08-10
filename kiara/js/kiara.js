@@ -1,18 +1,19 @@
-function mostrarUsuarios() {
+$(document).ready(function(){
+  $("#mostrar").click(function(evento){
+    evento.preventDefault();
     
-    var stefaniaTable = 
-        `
-        <table><tbody>
-        `;
-    
-    $.each(contenido, function(index, value) { //"<td>" + "</td>"
-        
-        stefaniaTable += "<tr><td>" + value.titulo + "</td>" + "<td>" + value.descripcion + "</td><tr>";
-        
+    var html = '<table border="1"><tbody>';
+    html += '<tr><th>Equipos</th>';
+        html += '<th>Puntos</th>';
+    html += '<th>Total</th></tr>';
+
+    $.getJSON('data.json', function(json){
+      $.each(json, function (i, item){
+        html += '<tr><th>'+item+'</th><th>'+item+'</th><th>'+item+'</th></tr>';
+      });
     });
     
-    stefaniaTable += "</tbody></table>";
-    
-    $("#contenido").append(stefaniaTable);
-    
-}
+    html += '</tbody></table>';
+    $("#donde").html(html);
+  });
+});
