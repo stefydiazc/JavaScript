@@ -41,29 +41,32 @@ function setData(){
 function mostrarCuentos(){
 	 var stefaniaTable = 
         `
-        <table><tbody>
+        <table>
+			<thead>
+			<tr><th> CODIGO </th><th> TITULO </th><th> DESCRIPCION </th></tr>
+	<tbody>
         `;
     
     $.each(contenido, function(index, value) { //"<td>" + "</td>"
         
-        stefaniaTable += "<tr><td>" + value.codigo + "</td>" + "<td>" + value.titulo + "</td><tr>";
+		
+		
+        stefaniaTable += "<tr><td>" + value.codigo + "</td>" + "<td>" + value.titulo + "</td>" + "<td>" + value.descripcion + "</td><tr>";
         
     });
     
     stefaniaTable += "</tbody></table>";
-    
-    $("#contenido").append(stefaniaTable);
-    
+    	
+	console.log(stefaniaTable);
+	return stefaniaTable;
 }
 }
-
 	
-		
+ document.getElementById("demo").innerHTML = mostrarCuentos();
 		/**/
-				   
+			   
 console.log(contenido.length);
-console.log(contenido[0]);	
-console.log(contenido[2]);	
+console.log(contenido[1]);	
 }
 	
 

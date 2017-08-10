@@ -29,7 +29,8 @@
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
 </head>
 	 <!--/////////////////////////-->
-<body>
+<body >
+	
  <div id="CajaGrande">
  <!-- Header Area -->
 <div id="nav">    
@@ -58,23 +59,57 @@
 </div>    
 </div>
    <!---//////////////////////////////////////////////////////////////////////////////////-->
-	<p id="demo"></p>
-	<!-- Maquetación administración -->
-        <div class="row">
-            
-            <!-- Dashboard -->
-            <div class="col-xs-12 col-sm-12">
-                <!-- Pills -->
-                <ul id="dynamicPillsAdmin" class="nav nav-pills nav-justified">
-                    <!-- Inserción de datos -->
-                </ul>
-
-                <!-- Contenido pills -->
-                <div id="pillsAdminContent" class="tab-content">
-                    <!-- Inserción de datos -->
-                </div>
+	<div class="container">
+     <br>
+     <h2><center> ADMINISTRACIÓN </center> </h2>
+   <div>
+         <form method="post" role="form" id="register-form" autocomplete="off" action="submit.html">
+                    
+            <div class="form-group">
+                   <label for="name">Codigo: </label>      
+                  <input id="codigo" class="form-control" placeholder="">          
+              </div>
+                                     
+         	  <div class="form-group">
+                      <label for="name">Titulo: </label> 
+                   <input name="titulo" type="text" class="form-control" placeholder=" ">
+                     <span class="help-block" id="error"></span>
+                   </div>
+                
+             
+             <div class="form-group">
+                       <label for="name">Descripcion: </label> 
+                   <input name="descripcion" type="text" class="form-control" placeholder="">
+                   <span class="help-block" id="error"></span>
+              </div>
+                        
+              <div class="form-group">
+                <label for="name">Foto principal: </label> 
+                   <input name="foto_principal" type="text" class="form-control" placeholder="">
+                   <span class="help-block" id="error"></span>                   
+              </div>
+          
+            <div>
+                 <button type="submit" class="btn btn-info">
+               INSERTAR
+                 </button>
             </div>
-        </div>
+        
+  </form>
+</div>
+</div>
+		<br>
+		
+		
+	   <!-- Maquetación administración -->
+	<div class="container">
+     <br>
+     <h3> LISTA DE CUENTOS </h3>
+ 
+     <div id="demo">
+	
+	</div>
+	</div>
    <!--/////////////////////////-->
 	
     <!-- Footer -->
