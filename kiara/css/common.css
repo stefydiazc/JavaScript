@@ -4,6 +4,7 @@ ul {
     padding: 0 0 0 40px;
 }
 /**/
+/*posicion*/
 .ch-grid {
 	margin: 20px 0 0 0;
 	padding: 0;
@@ -53,6 +54,8 @@ ul {
 	-ms-transform-style: preserve-3d;
 	transform-style: preserve-3d;
 }
+/*
+/* div que contiene las esferas*//*
 .ch-info > div {
 	display: block;
 	position: absolute;
@@ -71,12 +74,12 @@ ul {
 	-ms-transform-origin: 50% 0%;
 	transform-origin: 50% 0%;
 }
-
+*/
 .ch-info .ch-info-front {
 	box-shadow: inset 0 0 0 16px rgba(0,0,0,0.3);
 }
 
-.ch-info .ch-info-back {
+/*.ch-info .ch-info-back {
 	-webkit-transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
 	-moz-transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
 	-o-transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
@@ -85,7 +88,7 @@ ul {
 	background: #000;
 	opacity: 0;
 }
-
+*/
 .ch-img-1 { 
 	background-image: url(../recursos/imagenes/cuento1.jpg);
 }
@@ -96,6 +99,17 @@ ul {
 
 .ch-img-3 { 
 	background-image: url(../recursos/imagenes/cuento3.jpg);
+}
+.ch-img-4 { 
+	background-image: url(../recursos/imagenes/img1.jpg);
+}
+
+.ch-img-5 { 
+	background-image: url(../recursos/imagenes/img2.jpg);
+}
+
+.ch-img-6 { 
+	background-image: url(../recursos/imagenes/img3.jpg);
 }
 
 

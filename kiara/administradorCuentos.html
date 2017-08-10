@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Administraci&oacute;n</title>
+	 <!-- Funciones JS -->
+	<script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/kiara.js" type="text/javascript"></script>>
+	
+	 <!-- Estilos del sitio web-->
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all"/> 
+    <link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/styleAdm.css" />
+</head>
+  <body>
+    <div id="CajaGrande">
+ <!-- Header Area -->
+<div id="nav">    
+<nav class="navbar navbar-new" role="navigation"> <!-- Navigation -->
+
+  <!-- Navbar content -->
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="index.html">K I A R A </a>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="nav navbar-nav navbar-right text-center">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html"><i class="service-icon fa fa-home"></i>&nbsp;Inicio</a>
+      </li>
+		 <li class="nav-item">
+        <a class="nav-link" href="administrador.html"><i class="service-icon fa fa-info"></i>&nbsp;Administraci&oacute;n</a>
+      </li>
+    
+    </ul>
+  </div>
+</nav>
+</nav>
+</div>    
+</div>    
+
+   <!---//////////////////////////////////////////////////////////////////////////////////-->
+      <!-- Menu Administracion -->
+	   <!-- Cabecera -->
+        <div class="page-header">
+            <h1>CRUD Cuentos</h1>
+        </div>
+
+        <!--Formulario de entrada de datos-->
+        <div class="container">
+            <form id="frmPerson" class="form-horizontal">
+                <div class="form-group">
+                    <label for="txtCodigo" class="col-lg-2 control-label">Codigo</label>
+                    <div class="col-sm-4">
+                        <input type="text" id="txtCodigo" class="form-control" placeholder="">
+                    </div>
+                </div>                    
+                <div class="form-group">
+                    <label for="txtTitulo" class="col-lg-2 control-label">Titulo</label>
+                    <div class="col-sm-4">
+                        <input type="text" id="txtTitulo" class="form-control" placeholder="">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="txtDescripcion" class="col-lg-2 control-label">Descripcion</label>
+                    <div class="col-sm-4">
+                        <input type="text" id="txtDescripcion" class="form-control" placeholder="">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="fotoPrincipal" class="col-lg-2 control-label">Foto Principal</label>
+                    <div class="col-sm-4">
+                        <input type="email" id="fotoPrincipal" class="form-control" placeholder="">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-lg-offset-2 col-sm-4">
+                        <input type="submit" value="Insertar" id="btnSave" class="btn btn-success"/>
+                    </div>
+                </div>
+            </form>
+        </div>      
+
+        <!--Tabla con la lista de datos-->
+        <div class="container">
+            <table id="tblList" class="table table-bordered"></table>
+        </div>
+
+       	  <div class="collection listaAlumnos">
+	  </div>
+
+    <!---///////////////////////////////////////////////////////////////////////////////////-->
+	
+    <!-- Footer -->
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 text-center">
+           <em>ESPOL-EDCOM. Derechos Reservados 2017.  GMS S.A. - KIARA V.1.0.</em>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- /Footer -->
+    
+   <!---///////////////////////////////////////////////////////////////////////////////////--> 
+</body>
+</html>
+
