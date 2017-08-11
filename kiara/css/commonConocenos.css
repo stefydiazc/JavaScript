@@ -54,8 +54,8 @@ ul {
 	-ms-transform-style: preserve-3d;
 	transform-style: preserve-3d;
 }
-/*
-/* div que contiene las esferas*//*
+
+/* div que contiene las esferas*/
 .ch-info > div {
 	display: block;
 	position: absolute;
@@ -74,12 +74,12 @@ ul {
 	-ms-transform-origin: 50% 0%;
 	transform-origin: 50% 0%;
 }
-*/
+
 .ch-info .ch-info-front {
 	box-shadow: inset 0 0 0 16px rgba(0,0,0,0.3);
 }
 
-/*.ch-info .ch-info-back {
+.ch-info .ch-info-back {
 	-webkit-transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
 	-moz-transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
 	-o-transform: translate3d(0,0,-220px) rotate3d(1,0,0,90deg);
@@ -88,7 +88,7 @@ ul {
 	background: #000;
 	opacity: 0;
 }
-*/
+
 .ch-img-1 { 
 	background-image: url(../recursos/imagenes/cuento1.jpg);
 }
@@ -246,18 +246,3 @@ main{
 
 /**/
 /*services - cuentos*/
-/*table*/
-table, td, th {    
-    border: 1px solid #ddd;
-    text-align: left;
-}
-
-table {
-    border-collapse: collapse;
-    width: 100%;
-}
-
-th, td {
-    padding: 15px;
-
-/*table*/

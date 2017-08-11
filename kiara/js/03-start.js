@@ -43,28 +43,32 @@ function mostrarCuentos(){
         `
         <table>
 			<thead>
-			<tr><th> CODIGO </th><th> TITULO </th><th> DESCRIPCION </th></tr>
+			<tr>
+				<th> C&Oacute;DIGO </th> 
+				<th> T&Iacute;TULO </th>
+				<th> DESCRIPCI&Oacute;N </th>
+				<th> EDITAR </th>
+				<th> ELIMINAR </th>
+			</tr>
 	<tbody>
         `;
     
     $.each(contenido, function(index, value) { //"<td>" + "</td>"
-        
-		
-		
-        stefaniaTable += "<tr><td>" + value.codigo + "</td>" + "<td>" + value.titulo + "</td>" + "<td>" + value.descripcion + "</td><tr>";
-        
+        stefaniaTable += "<tr><td>" + value.codigo + "</td>" + "<td>" + value.titulo + "</td>" + "<td>" + value.descripcion + "</td>" +
+			"<td><a href='eliminarFila()'>Editar</a></td><td><a href='#'>Eliminar</a></td><tr>";      
     });
     
-    stefaniaTable += "</tbody></table>";
-    	
+    stefaniaTable += "</tbody></table>"; 	
 	console.log(stefaniaTable);
 	return stefaniaTable;
 }
 }
 	
  document.getElementById("demo").innerHTML = mostrarCuentos();
-		/**/
-			   
+/***********/
+
+	
+/***********/	
 console.log(contenido.length);
 console.log(contenido[1]);	
 }
