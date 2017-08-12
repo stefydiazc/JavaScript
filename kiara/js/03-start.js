@@ -54,21 +54,28 @@ function mostrarCuentos(){
         `;
     
     $.each(contenido, function(index, value) { //"<td>" + "</td>"
+        
+		
+		
         stefaniaTable += "<tr><td>" + value.codigo + "</td>" + "<td>" + value.titulo + "</td>" + "<td>" + value.descripcion + "</td>" +
-			"<td><a href='eliminarFila()'>Editar</a></td><td><a href='#'>Eliminar</a></td><tr>";      
+			"<td><a href='#'>Editar</a></td><td><a href='#'>Eliminar</a></td><tr>";
+         
     });
     
-    stefaniaTable += "</tbody></table>"; 	
+    stefaniaTable += "</tbody></table>";
+    	
 	console.log(stefaniaTable);
 	return stefaniaTable;
 }
+		function mostrar(){
+			console.log("hola");
+		}
 }
 	
  document.getElementById("demo").innerHTML = mostrarCuentos();
-/***********/
 
-	
-/***********/	
+		/**/
+			   
 console.log(contenido.length);
 console.log(contenido[1]);	
 }
