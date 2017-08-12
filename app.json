@@ -1,0 +1,20 @@
+{
+  "name": "JavaScript",
+  "scripts": {
+  },
+  "env": {
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/php"
+    },
+    {
+      "url": "heroku/php"
+    }
+  ]
+}
