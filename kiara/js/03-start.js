@@ -1,90 +1,34 @@
 
+var objJSON = "";
 
-/*Funcion inicial al cargar la pagina*/
 $(function() {
-    setData();
+    objJSON = leerArchivoJSON();
+   objJSON = JSON.parse(datos);
+   // grabarArchivoJSON(datos);
 });
 
-function setData(){
-	objJSON = JSON.parse(datos);
-	
-	contenido = [];
-	
-	
-	for (property in objJSON){
-		
-		switch(property){
-			case "contenido":
-			$.each(objJSON[property], function(index, value) {
-				
-				switch(Object.keys(value)[0]){
-			
-					case "cuento":
-	
-						$.each(value.cuento, function(index, value) {
-       
-							contenido.push(new Cuento(value));
-							
-						});
-						break;
-					}
-			});
-				break;
-		
-	}
-	/**/	
-
-
-/*
-    [04]
-*/	
-function mostrarCuentos(){
-	 var stefaniaTable = 
-        `
-        <table>
-			<thead>
-			<tr>
-				<th> C&Oacute;DIGO </th> 
-				<th> T&Iacute;TULO </th>
-				<th> DESCRIPCI&Oacute;N </th>
-				<th> EDITAR </th>
-				<th> ELIMINAR </th>
-			</tr>
-	<tbody>
-        `;
-    
-    $.each(contenido, function(index, value) { //"<td>" + "</td>"
-        
-		
-		
-        stefaniaTable += "<tr><td>" + value.codigo + "</td>" + "<td>" + value.titulo + "</td>" + "<td>" + value.descripcion + "</td>" +
-			"<td><a href='#'>Editar</a></td><td><a href='#'>Eliminar</a></td><tr>";
-         
-    });
-    
-    stefaniaTable += "</tbody></table>";
-    	
-	console.log(stefaniaTable);
-	return stefaniaTable;
+var leerArchivoJSON = function () {
+    var datos = localStorage.getItem("cuentos")
+    if (datos === null) {
+        datos = new Object();
+        datos.contenido = [];
+        localStorage.setItem("cuentos", JSON.stringify(datos));
+    } else {
+        datos = JSON.parse(datos);
+        if (typeof datos === "string") datos = JSON.parse(datos);
+    }
+    return datos;
 }
-		function mostrar(){
-			console.log("hola");
-		}
-}
-	
- document.getElementById("demo").innerHTML = mostrarCuentos();
 
-		/**/
-			   
-console.log(contenido.length);
-console.log(contenido[1]);	
+var grabarArchivoJSON = function (datos) {
+    if (datos === null) {
+        datos = new Object();
+        datos.contenido = [];
+        datos.contenido[0] = new Object();
+        datos.contenido[0].cuento = [];
+        alert(datos.contenido[0].cuento);
+        localStorage.setItem("cuentos", JSON.stringify(datos));
+    } else {
+        localStorage.setItem("cuentos", JSON.stringify(datos));
+    }
 }
-	
-
- 
-
-/*
-function setesfera(key, title, description, image){
-	$("")
-}
-*/

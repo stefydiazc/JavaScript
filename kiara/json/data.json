@@ -15,96 +15,135 @@
 				"titulo":"Uga, la tortuga",
 				"descripcion":"1991-02-12",
 				"foto_principal":"pathImgFile",
+				"creditos":"yo",
+				"nro_paginas":"4",
 				"paginas":[ 
 					{
 						"id":"1",
-						"foto":"../recursos/imagenes/img1.jpg",
-						"reseña":"gddfdfd",
+						"foto":"recursos/imagenes/img1.jpg",
+						"historia":"gddfdfd",
 						"audio":""
 					},
 					{
 						"id":"2",
-						"foto":"../recursos/imagenes/img1.jpg",
-						"reseña":"fsffd",
+						"foto":"recursos/imagenes/img1.jpg",
+						"historia":"fsffd",
 						"audio":""
 					},
 					{
 						"id":"3",
-						"foto":"../recursos/imagenes/img1.jpg",
-						"reseña":"fsfsfsf",
+						"foto":"recursos/imagenes/img1.jpg",
+						"historia":"fsfsfsf",
 						"audio":""
 					},
 					{
 						"id":"4",
-						"foto":"../recursos/imagenes/img1.jpg",
-						"reseña":"dsfff",
+						"foto":"recursos/imagenes/img1.jpg",
+						"historia":"dsfff",
 						"audio":""
 					}
-				]
+				],
+                "preguntas":[
+                    {
+                        "pregunta":"",
+                        "opciones":[
+                            {"opcion":""},
+                            {"opcion":""},
+                            {"opcion":""}
+                        ],
+                        "respuesta":""
+                    }
+                ]
             },
 			 {
-				"codigo":"001",
+				"codigo":"002",
 				"titulo":"Limon",
 				"descripcion":"1991-02-12",
 				"foto_principal":"pathImgFile",
+				"creditos":"yo",
+				"nro_paginas":"4",
 				"paginas":[ 
 					{
 						"id":"1",
-						"foto":"../recursos/imagenes/img1.jpg",
-						"reseña":"dfsffsfs",
+						"foto":"recursos/imagenes/img1.jpg",
+						"historia":"dfsffsfs",
 						"audio":""
 					},
 					{
 						"id":"2",
-						"foto":"../recursos/imagenes/img1.jpg",
-						"reseña":"sfdfsf",
+						"foto":"recursos/imagenes/img1.jpg",
+						"historia":"sfdfsf",
 						"audio":""
 					},
 					{
 						"id":"3",
-						"foto":"../recursos/imagenes/img1.jpg",
-						"reseña":"fdfdfdf",
+						"foto":"recursos/imagenes/img1.jpg",
+						"historia":"fdfdfdf",
 						"audio":""
 					},
 					{
 						"id":"4",
-						"foto":"../recursos/imagenes/img1.jpg",
-						"reseña":"fdfd",
+						"foto":"recursos/imagenes/img1.jpg",
+						"historia":"fdfd",
 						"audio":""
 					}
-				]
+				],
+                "preguntas":[
+                    {
+                        "pregunta":"",
+                        "opciones":[
+                            {"opcion":""},
+                            {"opcion":""},
+                            {"opcion":""}
+                        ],
+                        "respuesta":""
+                    }
+                ]
             },
 			  {
-				"codigo":"001",
+				"codigo":"003",
 				"titulo":"Un bonito conejo",
 				"descripcion":"1991-02-12",
 				"foto_principal":"pathImgFile",
+				"creditos":"yo",
+				"nro_paginas":"4",
 				"paginas":[ 
 					{
 						"id":"1",
-						"foto":"../recursos/imagenes/img1.jpg",
-						"reseña":"fdfdfd",
+						"foto":"recursos/imagenes/img1.jpg",
+						"historia":"fdfdfd",
 						"audio":""
 					},
 					{
 						"id":"2",
-						"foto":"../recursos/imagenes/img1.jpg",
-						"reseña":"fdfdfd",
+						"foto":"recursos/imagenes/img2.jpg",
+						"historia":"fdfdfd",
 						"audio":""
 					},
 					{
 						"id":"3",
-						"foto":"../recursos/imagenes/img1.jpg",
-						"reseña":"dfdfd",
+						"foto":"recursos/imagenes/img1.jpg",
+						"historia":"dfdfd",
 						"audio":""
 					},
 					{
 						"id":"4",
-						"foto":"../recursos/imagenes/img1.jpg",
-						"reseña":"dffdfdfd",
+						"foto":"recursos/imagenes/img1.jpg",
+						"historia":"dffdfdfd",
 						"audio":""
 					}
-				]
+				],
+                "preguntas":[
+                    {
+                        "pregunta":"",
+                        "opciones":[
+                            {"opcion":""},
+                            {"opcion":""},
+                            {"opcion":""}
+                        ],
+                        "respuesta":""
+                    }
+                ]
             }
          ]
       }

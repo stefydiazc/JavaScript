@@ -1,35 +1,32 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-EC">
 <head>
 	<meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=.5, maximum-scale=.5, minimum-scale=.5" />
 
-    <!--titulo del proyecto-->
-    <title>K I A R A</title>
-    
-    
-    <!--script-->
+     <!--titulo del proyecto-->
+    <title>K I A R A </title>
+    <link rel="icon" type="image/png" href="recursos/imagenes/favicon.png" type="image/x-icon">
+	<!--titulo del proyecto-->
     
     <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
     <script type="text/javascript" src="js/jquery.validate.min.js"></script>
-    <script type="text/javascript" src="js/kiara.js"></script>
     <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 	
-	<!-- system start-->
-	<script type="text/javascript" src="../kiara/js/01-datos.js"></script>
-	<script type="text/javascript" src="../kiara/js/02-clases.js"></script>
-	<script type="text/javascript" src="../kiara/js/03-start.js"></script>
-    
-	 <!--/////////////////////////-->
-  
+	<!-- system start -->
+	<script type="text/javascript" src="js/01-datos.js"></script>
 
-    <!-- Bootstrap core CSS -->
+	<script type="text/javascript" src="js/03-start.js"></script>
+    
+    <script type="text/javascript" src="js/kiara.js"></script>
+
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all"/> 
     <link rel="stylesheet" href="css/style.css" />
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
 	<link rel="stylesheet" href="css/common.css" />
+
 </head>
 	 <!--/////////////////////////-->
 <body >
@@ -64,64 +61,126 @@
    <!---//////////////////////////////////////////////////////////////////////////////////-->
 <div class="container">
    <div>
-         <form method="post" role="form" id="register-form" autocomplete="off" action="submit.html">
-                    
+        <form method="post" role="form" id="register-form" autocomplete="off" action="submit.html">
+            
+         <div class="container"> 
+        <div class="col-md-6 col-md-offset-3 "> 
+            <h3>MEN&Uacute; DE OPCIONES</h3>  
+           </div>
+          
+        <div id="tabs">
+             <div class="col-md-6 col-md-offset-3 ">
+           
+            <a href="#" tabindex="0">Cuento</a>
+           <a href="#" tabindex="1">P&aacute;ginas</a>
+           <a href="#" tabindex="2">Preguntas</a>
+     
+        </div>         
+        </div>
+        </div>
+           <!---//////////////////////////////////////////////////////////////////////////////////-->  
+       <div class="container">       
+        <div id="tab-0" class="tab">
             <div class="form-group">
-				<div class="col-md-6 col-md-offset-3 ">
-                   <label for="name">C&oacute;digo: </label>      
-                  <input id="codigo" class="form-control" placeholder="">          
-              </div>
-			 </div>	
-                                     
-         	  <div class="form-group">
-				  <div class="col-md-6 col-md-offset-3 ">
-                      <label for="name">T&iacute;tulo: </label> 
-                   <input name="titulo" type="text" class="form-control" placeholder=" ">
-                     <span class="help-block" id="error"></span>
-                   </div>
-			 </div>
-             
+                <div class="col-md-6 col-md-offset-3 ">
+                    <label for="name">C&oacute;digo: </label>
+                    <input id="codigo" class="form-control" placeholder="">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-6 col-md-offset-3 ">
+                    <label for="name">T&iacute;tulo: </label>
+                    <input id="titulo" type="text" class="form-control" placeholder=" ">
+                    <span class="help-block" id="error"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-6 col-md-offset-3 ">
+                    <label for="name">Descripci&oacute;n: </label>
+                    <input id="descripcion" type="text" class="form-control" placeholder="">
+                    <span class="help-block" id="error"></span>
+                </div>
+            </div>
+            
              <div class="form-group">
-				 <div class="col-md-6 col-md-offset-3 ">
-                       <label for="name">Descripci&oacute;n: </label> 
-                   <input name="descripcion" type="text" class="form-control" placeholder="">
-                   <span class="help-block" id="error"></span>
-				 </div>
-              </div>
-                        
-              <div class="form-group">
-				  <div class="col-md-6 col-md-offset-3 ">
-                <label for="name">Foto principal: </label> 
-                   <input name="foto_principal" type="text" class="form-control" placeholder="">
-					  <span class="help-block" id="error"></span>   </div>                
-              </div>
-          <br>
-            <div>
-				
-				<div class="col-md-6 col-md-offset-3 ">
-					<br>
-                 <button type="submit" class="btn btn-info">
-               INSERTAR
-                 </button>
-				</div>
-            </div>   
+                <div class="col-md-6 col-md-offset-3 ">
+                    <label for="name">Cr&eacute;ditos: </label>
+                    <input id="creditos" type="text" class="form-control" placeholder="">
+                    <span class="help-block" id="error"></span>
+                </div>
+            </div>
+            
+            
+            <div class="form-group">
+                <div class="col-md-6 col-md-offset-3 ">
+                    <label for="name">Foto principal: </label>
+                    <input id="foto_principal" type="text" class="form-control" placeholder="">
+                    <span class="help-block" id="error"></span>
+                </div>
+            </div>
+                  
+        </div>
+         <!--  -->   
+            
+            
+            
+         <!-- -->   
+          <div class="col-md-6 col-md-offset-3 ">   
+        <div id="tab-1" class="tab hid">
+            <input type="button" value="Nueva pagina"/>
+            <div id="paginas" ></div>
+        </div>
+            </div>    
+        <div id="tab-2" class="tab hid">
+            <fieldset>
+                <legend>Preguntas</legend>
+                <div id="preguntas"></div>
+            </fieldset>
+        </div>
+        <!--  -->
+      </div>   
   </form>
+      
+       
+        <br>
+        
+			<br>
+       <div class="container">    
+		<div class="col-md-6 col-md-offset-3 ">
+            <button type="button" id="guardar" class="btn btn-info">GUARDAR</button>
+			
+            <button type="button" id="cancelar" class="btn btn-info">CANCELAR</button>
+		</div>
+             </div>
 </div>
 		
 	   <!-- Maquetación administración -->
-	<div class="col-md-6 col-md-offset-3 ">	
-		<br>
-     <h1> LISTA DE CUENTOS </h1>
- 
-     <div id="demo">
-	</div>
-	</div>
+    <div class="col-md-6 col-md-offset-3 ">
+        <br>
+        <h1> LISTA DE CUENTOS 
+            <button type="button" id="nuevo" class="btn btn-info">NUEVO</button>
+         </h1>
+
+        <table id="demo">
+            <thead>
+                <tr>
+                    <th> C&Oacute;DIGO </th>
+                    <th> T&Iacute;TULO </th>
+                    <th> DESCRIPCI&Oacute;N </th>
+                    <th> CR&Eacute;DITOS </th>
+                    <th> EDITAR </th>
+                    <th> ELIMINAR </th>
+                </tr>
+            <tbody></tbody>
+        </table>
+
+    </div>
 </div>
 		
 		
 	
-
-   <!--/////////////////////////-->
 	
     <!-- Footer -->
     <footer>
@@ -136,7 +195,6 @@
     </footer>
     <!-- /Footer -->
     
-   <!---///////////////////////////////////////////////////////////////////////////////////--> 
 
 
 </body>
