@@ -4,9 +4,8 @@ var idxCuento = "";
 $(function () {
     
     mostrar();
-    mostrarHtml();
-	animacion();
-	nuevo();
+
+    nuevo();
     
     $("#nuevo").click(function (e) {
         nuevo();
@@ -24,6 +23,12 @@ $(function () {
         obj.codigo = $("#codigo").val();
         obj.titulo = $("#titulo").val();
         obj.descripcion = $("#descripcion").val();
+        obj.creditos = $("#creditos").val();
+
+        if ($("#estadoA").prop("checked"))
+            obj.estado = "A";
+        else
+            obj.estado = "I";
 
         var paginas = [];
         $.each($("#paginas div"), function (i, v) {
@@ -38,9 +43,29 @@ $(function () {
 
         obj.paginas = paginas;
 
+
+        if (datos.estado === "A") {
+            // Validaciones
+            if (!(datos.codigo)) {
+                alert("Debe ingresar el código del cuento.");
+                return;
+            }
+            if (paginas.length === 0) {
+                alert("Debe ingresar las paginas");
+                return false;
+            }
+        }
+
+        if (idxCuento === "") {
+            objJSON.contenido[0].cuento.push(obj);
+        }
+
         grabarArchivoJSON(objJSON);
+
         mostrar();
+
         nuevo();
+        console.log(objJSON);
         return false;
     });
 
@@ -49,17 +74,16 @@ $(function () {
         return false;
     });
 
+    $("#exportar").click(function (e) {
+        exportJSON();
+        return false;
+    });
+
 });
 
-var animacion = function (){
-$( "#right" ).click(function() {
-  $( ".block" ).animate({ "left": "+=50px" }, "slow" );
-});
- 
-$( "#left" ).click(function(){
-  $( ".block" ).animate({ "left": "-=50px" }, "slow" );
-});
-}
+
+	
+
 
 var mostrar = function () {
     $.each($("#tabs a"), function (i, v) {
@@ -91,7 +115,16 @@ var mostrar = function () {
             $("#titulo").val(cuento.titulo);
             $("#creditos").val(cuento.creditos);
             $("#descripcion").val(cuento.descripcion);
-            $("#foto_principal").val(cuento.foto_principal);
+            //$("#foto_principal").val(cuento.foto_principal);
+          
+          /*  if (cuento.estado) {
+                if (cuento.estado === "A")
+                    $("#estadoA").prop("checked", "checked");
+                else
+                    $("#estadoI").prop("checked", "checked");
+            } else {
+                $("#estadoI").prop("checked", "checked");
+            }*/
 
             $("#paginas").html("");
             $.each(cuento.paginas, function (i, v) {
@@ -121,73 +154,27 @@ var mostrar = function () {
     });
 
     $("#demo tbody a.del").click(function (e) {
+        var id = $(e.target).attr("value");
+        idxCuento = id;
+
+        //var cuento = objJSON.contenido[0].cuento[id];
+        objJSON.contenido[0].cuento.splice(id, 1);
+
+        grabarArchivoJSON(objJSON);
+
+        mostrar();
+
         return false;
     });
 }
 
-var mostrarHtml = function () {
-
-    var stefaniaTable = "";
-
-    $.each(objJSON.contenido[0].cuento, function (index, value) { //"<td>" + "</td>"
-        stefaniaTable += "<tr id='c" + index + "'><td>" + value.titulo + "</td>" + "<td>" + value.descripcion + "</td>" +"<td>" + value.creditos+ "</td>" +
-			"<td><a href='#' class='edt' value='" + index + "'>Abrir</a></td><tr>";
-    });
-
-    $("#demo1 tbody").html("");
-    $("#demo1 tbody").append(stefaniaTable);
-
-    $.each($("#demo1 tbody a.edt"), function (i, v) {
-        $(v).click(function (e) {
-            var id = $(e.target).attr("value");
-            idxCuento = id;
-
-            var cuento = objJSON.contenido[0].cuento[id];
-            /*
-            $("#codigo").val(cuento.codigo);
-            $("#titulo").val(cuento.titulo);
-            $("#descripcion").val(cuento.descripcion);*/
-
-            $("#paginas1").html("");
-            $.each(cuento.paginas, function (i, v) {
-                var pagina1 = [];
-                pagina1.push("<div class='prueba'>");
-                pagina1.push("<div class='textoCuento'>");
-                pagina1.push("<textarea class='hst'>");
-                pagina1.push(v.historia);
-                pagina1.push("</textarea>");
-                 pagina1.push("</div>");
-
-                pagina1.push("<br />");
-               
-                
-                pagina1.push("<div class='imgCuento'>");
-                pagina1.push("<img class='img' src='");
-                pagina1.push(v.foto);
-                pagina1.push("' />");
-                pagina1.push("<br />");
-                pagina1.push("</div>");
-                pagina1.push("</div>");
-               
-            
-		pagina1.push("<br />");
-                $("#paginas1").append(pagina1.join(""));
-            });
-
-            return false;
-        });
-    });
-
-    $("#demo1 tbody a.del").click(function (e) {
-        return false;
-    });
-}
 
 var nuevo = function () {
     idxCuento = "";
     $("#codigo").val("");
     $("#titulo").val("");
     $("#descripcion").val("");
+    $("#creditos").val("");
     $("#paginas").html("");
 };
 

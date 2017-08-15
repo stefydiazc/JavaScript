@@ -12,136 +12,133 @@
          "cuento":[
             {
 				"codigo":"001",
-				"titulo":"Uga, la tortuga",
-				"descripcion":"1991-02-12",
-				"foto_principal":"pathImgFile",
-				"creditos":"yo",
+				"titulo":"La Hormiga Trabajadora",
+				"descripcion":"Ver la necesidad del otro y compartir.  Ser solidario con los demás.",
+				"creditos":" creado por: Mariana Morales",
 				"nro_paginas":"4",
 				"paginas":[ 
 					{
 						"id":"1",
-						"foto":"recursos/imagenes/img1.jpg",
-						"historia":"gddfdfd",
-						"audio":""
+						"foto":"recursos/imagenes/cuento1_pagina1.jpg",
+						"historia":"Érase una hormiga llamada Lucia que lo único que hacía todo el día era trabajar, trabajar y solo trabajar.",
+						"audio":"recursos/audio/cuento1_audio1.mp3"
 					},
 					{
 						"id":"2",
-						"foto":"recursos/imagenes/img1.jpg",
-						"historia":"fsffd",
-						"audio":""
+						"foto":"recursos/imagenes/cuento1_pagina2.jpg",
+						"historia":"Un día la hormiga se perdió y no sabía regresar. Se sentó con un grupo de grillos que estaban tumbados cantando; esos grillos sólo cantaban y cantaban, la hormiga les preguntó que si no recogían comida para el invierno.",
+						"audio":"recursos/audio/cuento1_audio2.mp3"
 					},
 					{
 						"id":"3",
-						"foto":"recursos/imagenes/img1.jpg",
-						"historia":"fsfsfsf",
-						"audio":""
+						"foto":"recursos/imagenes/cuento1_pagina3.jpg",
+						"historia":"Los grillos le dijeron que no, que pasaban; entonces la hormiga hizo un trato con los grillos. El trato era: si ustedes me cobijáis en vuestra casa todo el invierno yo os cogeré comida para todo el invierno.",
+						"audio":"recursos/audio/cuento1_audio3.mp3"
 					},
 					{
 						"id":"4",
-						"foto":"recursos/imagenes/img1.jpg",
-						"historia":"dsfff",
-						"audio":""
+						"foto":"recursos/imagenes/cuento1_pagina4.jpg",
+						"historia":"Llegando el invierno la hormiga les hacía de comer todo el día. Estuvieron todo el invierno pasándoselo bien y la hormiga comprendió que, aparte de trabajar, también era necesario divertirse y los grillos aprendieron que era necesario recoger comida durante todo el verano.",
+						"audio":"recursos/audio/cuento1_audio4.mp3"
 					}
 				],
                 "preguntas":[
                     {
-                        "pregunta":"",
+                        "pregunta":"¿Como se llamaba la hormiga",
                         "opciones":[
-                            {"opcion":""},
-                            {"opcion":""},
-                            {"opcion":""}
+                            {"opcion":"Lucia"},
+                            {"opcion":"Maria"},
+                            {"opcion":"Pepita"}
                         ],
-                        "respuesta":""
+                        "respuesta":1
                     }
                 ]
             },
 			 {
 				"codigo":"002",
-				"titulo":"Limon",
-				"descripcion":"1991-02-12",
-				"foto_principal":"pathImgFile",
-				"creditos":"yo",
+				"titulo":"Los Ratoncitos Desobedientes",
+				"descripcion":"Ver la importancia de la obediencia.",
+				"creditos":" creado por: Manuel Mendieta",
 				"nro_paginas":"4",
 				"paginas":[ 
 					{
 						"id":"1",
-						"foto":"recursos/imagenes/img1.jpg",
-						"historia":"dfsffsfs",
-						"audio":""
+						"foto":"recursos/imagenes/cuento2_pagina1.jpg",
+						"historia":"Una vez, estaban dos Ratoncitos que eran hermanos muy unidos. Ellos salieron a pasear sin permiso de su mamá que siempre les recomendaba no alejarse mucho de su hogar, pero ellos lo olvidaron y tras caminar buen rato, se alejaron demasiado de su casa y ya era de noche.",
+						"audio":"recursos/audio/cuento2_audio1.mp3"
 					},
 					{
 						"id":"2",
-						"foto":"recursos/imagenes/img1.jpg",
-						"historia":"sfdfsf",
-						"audio":""
+						"foto":"recursos/imagenes/cuento2_pagina2.jpg",
+						"historia":"La Ratoncita asustada, dijo a su hermano en voz baja: Hermanito, ¿escuchaste ese ruido?, ¿crees que sea un Gato?, tengo miedo!. Tras esto, los dos se abrazaron muy asustados temiendo lo peor. Derrepente, escucharon una voz familiar",
+						"audio":"recursos/audio/cuento2_audio2.mp3"
 					},
 					{
 						"id":"3",
-						"foto":"recursos/imagenes/img1.jpg",
-						"historia":"fdfdfdf",
-						"audio":""
+						"foto":"recursos/imagenes/cuento2_pagina3.jpg",
+						"historia":"¡Hijos míos, soy yo! ¿donde están?, ¿por qué se alejaron tanto? Si, era su Papa, y sin demora, ellos corrieron muy felices para abrazarla. Luego todos regresaron al hogar nuevamente. Cuando ya estaban seguros, el Papa les dijo:",
+						"audio":"recursos/audio/cuento2_audio3.mp3"
 					},
 					{
 						"id":"4",
-						"foto":"recursos/imagenes/img1.jpg",
-						"historia":"fdfd",
-						"audio":""
+						"foto":"recursos/imagenes/cuento2_pagina4.jpg",
+						"historia":"Prométanme que nunca más se alejarán sin mi permiso del hogar. Afuera hay mucho peligro para ustedes. Los dos Ratoncitos muy arrepentidos dijeron a su Papa: ¡Papito, papito, perdónanos por favor! Gracias por ir en nuestra ayuda. Que bueno es estar en casa nuevamente a tu lado.",
+						"audio":"recursos/audio/cuento2_audio4.mp3"
 					}
 				],
                 "preguntas":[
                     {
-                        "pregunta":"",
+                        "pregunta":"¿Los ratoncitos le pidieron permiso al papa y la mama?",
                         "opciones":[
-                            {"opcion":""},
-                            {"opcion":""},
-                            {"opcion":""}
+                            {"opcion":"Si"},
+                            {"opcion":"No"},
+                            {"opcion":"Tal vez"}
                         ],
-                        "respuesta":""
+                        "respuesta":2
                     }
                 ]
             },
 			  {
 				"codigo":"003",
-				"titulo":"Un bonito conejo",
-				"descripcion":"1991-02-12",
-				"foto_principal":"pathImgFile",
-				"creditos":"yo",
+				"titulo":"Los Ositos Reboltosos",
+				"descripcion":"Ver la importancia del respeto y la disciplina.",
+				"creditos":" creado por: Eva Moreno Montilla",
 				"nro_paginas":"4",
 				"paginas":[ 
 					{
 						"id":"1",
-						"foto":"recursos/imagenes/img1.jpg",
-						"historia":"fdfdfd",
-						"audio":""
+						"foto":"recursos/imagenes/cuento3_pagina1.jpg",
+						"historia":"Osete y Osito vivían en un hermoso bosque donde había colmenas cargadas de panales de rica miel y un río de aguas cristalinas donde bañarse y jugar con los peces.Pero eran muy traviesos los dos ositos y más de una vez se perdían mientras perseguían a alguna mariposa, por eso la mamá de Osete y Osito, mami Osa, les castigaba sin poder ir a bañarse o jugar con los demás ositos.",
+						"audio":"recursos/audio/cuento3_audio1.mp3"
 					},
 					{
 						"id":"2",
-						"foto":"recursos/imagenes/img2.jpg",
-						"historia":"fdfdfd",
-						"audio":""
+						"foto":"recursos/imagenes/cuento3_pagina2.jpg",
+						"historia":"Cuando los ratoncillos del bosque estaban descuidados tomando el sol, solían correr detrás de ellos, obligándoles a huir temblando de miedo.En una ocasión los traviesos ositos quisieron coger un panal de miel de lo alto de un árbol.Mientras Osete miraba lo que hacía su hermano, Osito trataba de subir a las ramas. Se acercó y se acercó al panal y alzando las zarpas dio a la colmena con gran fuerza. ",
+						"audio":"recursos/audio/cuento3_audio2.mp3"
 					},
 					{
 						"id":"3",
-						"foto":"recursos/imagenes/img1.jpg",
-						"historia":"dfdfd",
-						"audio":""
+						"foto":"recursos/imagenes/cuento3_pagina3.jpg",
+						"historia":"Estaba oscureciendo en el bosque y recordaron que mami Osa les reprendería si llegaban tarde a cenar. Pero de camino a casa se encontraron con primo Osón que dormía plácidamente sobre la hierba mientras agarraba con la zarpa un gran salmón recién pescado.Se acercaron en silencio para coger el rico alimento. Conteniendo la respiración llegaron junto a él... Pero en ese preciso instante despertó y con un potente rugido hizo que Osete y Osito se cayeran de espaldas por causa de la sorpresa.",
+						"audio":"recursos/audio/cuento3_audio3.mp3"
 					},
 					{
 						"id":"4",
-						"foto":"recursos/imagenes/img1.jpg",
-						"historia":"dffdfdfd",
-						"audio":""
+						"foto":"recursos/imagenes/cuento3_pagina4.jpg",
+						"historia":"Llegaron a casa y después de hacer los deberes, bañarse y cenar se pusieron a jugar armando tanto alboroto que mami Osa decidió darles un escarmiento por tanta travesura.Osete y Osito, atados el uno al otro por sus colas hubieron de permanecer en un rincón, mientras los ratones y el primo Osón que se asomaban a través de la ventana celebraban con sus risas el castigo de los ositos revoltosos. ",
+						"audio":"recursos/audio/cuento3_audio4.mp3"
 					}
 				],
                 "preguntas":[
                     {
-                        "pregunta":"",
+                        "pregunta":"¿Donde vivian los ositos?",
                         "opciones":[
-                            {"opcion":""},
-                            {"opcion":""},
-                            {"opcion":""}
+                            {"opcion":"En un lindo bosque"},
+                            {"opcion":"En una linda playa"},
+                            {"opcion":"En una ciudad"}
                         ],
-                        "respuesta":""
+                        "respuesta":1
                     }
                 ]
             }
