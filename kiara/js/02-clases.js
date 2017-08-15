@@ -4,7 +4,8 @@ var Cuento = class Cuento {
         this.codigo = jsonObj.codigo;
         this.titulo = jsonObj.titulo;
         this.descripcion = jsonObj.descripcion;
-        this.foto_principal = jsonObj.foto_principal;
+        this.creditos = jsonObj.creditos;
+
     }
 };
 
@@ -12,7 +13,7 @@ var Pagina = class Pagina  {
     constructor(jsonObj) {
         this.id = jsonObj.id;
         this.foto = jsonObj.foto;
-        this.reseña = jsonObj.reseña;
+        this.historia = jsonObj.historia;
         this.audio = jsonObj.audio;
     }
 };

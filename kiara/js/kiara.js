@@ -25,10 +25,7 @@ $(function () {
         obj.descripcion = $("#descripcion").val();
         obj.creditos = $("#creditos").val();
 
-        if ($("#estadoA").prop("checked"))
-            obj.estado = "A";
-        else
-            obj.estado = "I";
+
 
         var paginas = [];
         $.each($("#paginas div"), function (i, v) {
